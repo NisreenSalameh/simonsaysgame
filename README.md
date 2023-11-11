@@ -1,4 +1,4 @@
-# Simon Game
+# Simon Says Game
 
 This is a simple Simon game implemented in HTML, CSS, and JavaScript. Simon is a classic memory game where the computer generates a pattern of colors, and the player must replicate the pattern by clicking the buttons in the correct order.
 
@@ -18,6 +18,6 @@ This is a simple Simon game implemented in HTML, CSS, and JavaScript. Simon is a
 
 ## Technologies Used
 
-HTML5
-CSS3
-JavaScript
+- HTML5
+- CSS3
+- JavaScript
