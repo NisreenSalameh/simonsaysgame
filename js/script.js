@@ -21,13 +21,13 @@ document.querySelectorAll(".btn").forEach(function(button) {
             userPattern.push(userChoice);
             playAudio(userChoice);
             buttonAnimation(userChoice);
-            validateAnswer(userPattern.length - 1);
+            validatePattern(userPattern.length - 1);
         }
     });
 });
 
 
-function validateAnswer(currentLevel) {
+function validatePattern(currentLevel) {
     if (computerPattern[currentLevel] === userPattern[currentLevel]) {
         if (userPattern.length === computerPattern.length) {
             setTimeout(function() {
@@ -92,17 +92,4 @@ function restartGame() {
     level = 0;
     computerPattern = [];
     gameStarted = false;
-
-    
-    document.querySelectorAll(".btn").forEach(function(button) {
-        button.addEventListener("click", function() {
-            if (gameStarted && level <= 10) {
-                const userChoice = this.id;
-                userPattern.push(userChoice);
-                playAudio(userChoice);
-                buttonAnimation(userChoice);
-                validateAnswer(userPattern.length - 1);
-            }
-        });
-    });
 }
